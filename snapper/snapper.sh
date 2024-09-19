@@ -29,7 +29,7 @@ sudo rc-service --quiet dbus start
 
 rm templist
 
-sudo snapper --config home create-config /home ALLOW_USERS=${LOGNAME} SYNC_ACL=yes
+sudo snapper --config home create-config / home ALLOW_USERS=${LOGNAME} SYNC_ACL=yes
 sudo snapper --config root create-config / ALLOW_USERS=${LOGNAME} SYNC_ACL=yes
 
 sudo chown -R :${LOGNAME} /.snapshots
